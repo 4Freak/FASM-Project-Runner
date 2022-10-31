@@ -8,7 +8,9 @@
 /*			args = new string[2];
 			args[0] = "compileAndExecute";
 			args[1] = "D:\\BSUIR\\5_Sem\\OSaSP\\Projects\\_041\\Lab4.asm";
-*/			args[1] = args[1].Replace('/', Path.DirectorySeparatorChar);
+*/			
+			// TODO: fix backslash in JSON
+			args[1] = args[1].Replace('/', Path.DirectorySeparatorChar);
 			var commandHandler = new CommandHandler();
 			try
 			{

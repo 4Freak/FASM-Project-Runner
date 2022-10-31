@@ -8,7 +8,7 @@ namespace FASM_Project_Runner
 	{
 		private List<string> _visitedDirectories;
 
-		private string _FASMProjectSignature = "_FASMPROGECT.json";
+		private string _FASMProjectSignature = "_FASMPROJECT.json";
 
 		public FileSeeker()
 		{
@@ -21,11 +21,10 @@ namespace FASM_Project_Runner
 			_visitedDirectories.Clear();
 			startFileName = startFileName.Replace('/', Path.DirectorySeparatorChar);
 			string currDir = startFileName.Substring(0, startFileName.LastIndexOf(Path.DirectorySeparatorChar));
-			if (Directory.Exists(currDir.ToString()))
+			if (Directory.Exists(currDir))
 			{
 				while (fasmProject == null && currDir.Length != 0)
 				{
-				    currDir = currDir.ToString();
 					if (_visitedDirectories.Contains(currDir) == false)
 					{
 						
