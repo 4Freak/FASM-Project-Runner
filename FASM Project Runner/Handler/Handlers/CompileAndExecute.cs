@@ -18,8 +18,6 @@ namespace FASM_Project_Runner
 							"." + 
 							fasmProject.OutputType;
 			
-			
-			// TODO cmpParam to string
 			StringBuilder sb = new StringBuilder();
 			foreach (var param in cmpParam)
 			{
