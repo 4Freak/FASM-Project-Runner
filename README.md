@@ -9,12 +9,12 @@
 - Create **JSON** project file in your FASM project directory
 >JSON file **must** contain "*_FASMPROGECT.json*" in name 
 >JSON example:  
->В {    
+>{    
     "EntryFileFullName": "D:/FASM Projects/NppTest/NppTest.asm",  
     "ProjectName": "NppTestCompiled",  
     "OutputType": "exe",   
     "CompilerPath": "D:/Programms for work/FASM/INCLUDE/FASM.EXE"  
-В }
+}
 >- **EntryFileFullName** - file from which compilation begins (*Entry point*)
 >- **ProjectName** - your output file name
 >- **OutputType** - type of your output file (*exe/img/png/...*)
@@ -29,7 +29,7 @@
 > **Path to FASM Project Runner.exe** - full path to your compiled .exe file in step one  
 > **Command** - command that FASM Project Runner.exe **must** execute  
 > **List** of command that FASM Project Runner.exe **can** execute:  
->-
+>
 > - compile and execute - compile and execute your project
 >---     
 > **$(FULL_CURRENT_PATH)** - Notepad++ keyword, replaced by full path for current editing file 
