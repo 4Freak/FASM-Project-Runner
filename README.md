@@ -8,13 +8,13 @@
 > Example path: D:\Programms for work\FASM\INCLUDE\FASM.EXE
 - Create **JSON** project file in your FASM project directory
 >JSON file **must** contain "*_FASMPROGECT.json*" in name 
->JSON example:
->{
-    "EntryFileFullName": "D:/FASM Projects/NppTest/NppTest.asm",
-	"ProjectName": "NppTestCompiled",
-	"OutputType": "exe", 
-	"CompilerPath": "D:/Programms for work/FASM/INCLUDE/FASM.EXE"
-}
+>JSON example:  
+> {    
+    "EntryFileFullName": "D:/FASM Projects/NppTest/NppTest.asm",  
+    "ProjectName": "NppTestCompiled",  
+    "OutputType": "exe",   
+    "CompilerPath": "D:/Programms for work/FASM/INCLUDE/FASM.EXE"  
+ }
 >- **EntryFileFullName** - file from which compilation begins (*Entry point*)
 >- **ProjectName** - your output file name
 >- **OutputType** - type of your output file (*exe/img/png/...*)
@@ -32,4 +32,4 @@
 >- compile and execute - compile and execute your project
 > 
 > **$(FULL_CURRENT_PATH)** - Notepad++ keyword, replaced by full path for current editing file 
-- Now you can **Run** it or **Save** and bind to proposed shortcuts 
+- Now you can **Run** it or **Save** and bind to proposed shortcuts
